@@ -12,7 +12,7 @@ class thistest
 
         int xset(int inx);
         int retx();
-        int thistest &retaddrx();
+        //int &retaddrx();
 };
 
 #endif // THISTEST_H
