@@ -1,6 +1,6 @@
 #include "thistest.h"
 
-thistest::thistest(int a)
+thistest::thistest(int)
 {
 }
 

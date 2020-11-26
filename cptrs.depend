@@ -1,10 +1,10 @@
 # depslib dependency file v1.0
-1606355432 source:e:\documents\github\projectc\cptrs\main.cpp
+1606370668 source:e:\documents\github\projectc\cptrs\main.cpp
 	<iostream>
 	"thistest.h"
 
-1606356164 e:\documents\github\projectc\cptrs\include\thistest.h
+1606374090 e:\documents\github\projectc\cptrs\include\thistest.h
 
-1606356164 source:e:\documents\github\projectc\cptrs\src\thistest.cpp
+1606374046 source:e:\documents\github\projectc\cptrs\src\thistest.cpp
 	"thistest.h"
 

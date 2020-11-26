@@ -6,7 +6,7 @@ class thistest
     private:
         int x;
     public:
-        thistest(int a);
+        thistest(int);
         int outthis();
         int setx(int inx);
 
