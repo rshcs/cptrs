@@ -4,7 +4,13 @@ using namespace std;
 
 int b[6] = {1, 7, 3, 4, 5};
 int* bptr = &b[0];
-long* bytebptr = (long*) bptr;
+long* longbptr = (long*) bptr;
+
+uint8_t h[5] = {31, 12, 78, 56};
+int *hptr = (int*)(&h);
+uint8_t *hp = &h[0];
+
+int8_t k = 33;
 
 thistest bo(8);
 thistest* objptr = &bo;
@@ -61,7 +67,8 @@ int main()
     //cout<< bo.retaddrx() <<endl;
     //cout << sizeof(b[0])<< endl;
     //cout<< *bptr <<endl;
-    cout<< objptr->outthis() << endl;
+    //cout<< objptr->outthis() << endl;
+    cout<< k <<endl;
 
     return 0;
 }
