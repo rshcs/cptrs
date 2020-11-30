@@ -35,6 +35,23 @@ int addnum(int a, int b)
     return a+b;
 }
 
+int* fun()
+{
+    int* arr = new int[2];
+    arr[0] = 7;
+    arr[1] = 8;
+    //arr[2] = 12;
+    //cout<< &arr[1] << endl;
+    //arr[2] = 45;
+    return arr;
+}
+
+int* sumv()
+{
+    int *inv = new int(5);
+    return inv;
+}
+
 int main()
 {
 
@@ -71,9 +88,47 @@ int main()
     //cout << sizeof(b[0])<< endl;
     //cout<< *bptr <<endl;
     //cout<< objptr->outthis() << endl;
-    //cout<< &ret6 << "|" <<ret6<<endl;
-    int (*addnum_ptr)(int, int) = &addnum;
-    int result = (*addnum_ptr)(2, 3);
-    cout<< result << endl;
+    //cout<< &b << "|" <<b<<"|" << &b[0]<<endl;
+    //int (*addnum_ptr)(int, int) = &addnum;
+    //int result = (*addnum_ptr)(2, 3);
+    //cout<< result << endl;
+    //int* arr2 = fun();
+
+    //delete[] arr2;
+
+    //cout << (fun())<< endl;
+    /*
+    delete[] fun();
+    cout << *(fun())<< endl;
+    */
+    //cout << (fun()+1)<< endl;
+    //delete[] (fun()+1);
+    //cout << (fun()+1)<< endl;
+
+    cout << fun()<< endl;
+    cout << (fun()+1)<< endl;
+    //cout << *(fun())<< endl;
+    //cout << *(fun()+1)<< endl;
+    cout << sizeof(fun())<< endl;
+    cout << sizeof(fun()+1)<< endl;
+    cout << ""<< endl;
+
+    //delete[] (fun()+1);
+    cout << fun()<< endl;
+    cout << (fun()+1)<< endl;
+    //cout << *(fun())<< endl;
+    //cout << *(fun()+1)<< endl;
+    cout << sizeof(fun())<< endl;
+    cout << sizeof(fun()+1)<< endl;
+
+    //cout << *(fun()+2)<< endl;
+
+    //cout<< sizeof(*(fun))<< endl;
+
+    //cout<< *sumv() <<endl;
+    //delete (sumv()+20);
+    //cout<< *sumv() <<endl;
+    //cout<< (sumv()) <<endl;
+
     return 0;
 }
