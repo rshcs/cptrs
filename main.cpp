@@ -30,7 +30,10 @@ int ret6()
     return 6;
 }
 
-
+int addnum(int a, int b)
+{
+    return a+b;
+}
 
 int main()
 {
@@ -68,7 +71,9 @@ int main()
     //cout << sizeof(b[0])<< endl;
     //cout<< *bptr <<endl;
     //cout<< objptr->outthis() << endl;
-    cout<< k <<endl;
-
+    //cout<< &ret6 << "|" <<ret6<<endl;
+    int (*addnum_ptr)(int, int) = &addnum;
+    int result = (*addnum_ptr)(2, 3);
+    cout<< result << endl;
     return 0;
 }
